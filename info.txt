@@ -1,0 +1,40 @@
+PART 1: Solidify Terminology
+- What is HTTP?
+    Hypertext Transfer Protocol (standard web) 
+    (How browsers and servers communicate)
+- What is a URL?    
+    (uniform resource locator)
+- What is DNS?
+     (domain name system) turns a hostname into an IP address
+- What is a query string?
+    optional but provides “extra information” and goes at the end 
+    of the url
+- What are two HTTP verbs and how are they different?
+    GET (requests without side effects) and POST (requests with side
+    effects)
+- What is an HTTP request?
+    information that is sent to a server
+    in a request you specify a method, http protocal version (1.1), 
+    the resource url, and a header(not mandatory)
+- What is an HTTP response? 
+    the server sends information back in http form
+    in a response you get http protocal version (1.1), a response 
+    status code, headers, and response bodies (the content of the page)
+- What is an HTTP header? Give a couple examples of request and 
+response headers you have seen.
+    a type of request 
+    Accept-Language - shows the web page in a different natural 
+    language (fr is french)
+    Accept - shows you a different coding language
+- What are the processes that happen when you type 
+“http://somesite.com/some/page.html” into a browser?
+    the browser turns the name into an ip address, the browser then makes 
+    a request to the ip address using headers, then it sends a response, the 
+    browser then makes a DOM from the html and adds any other resources, 
+    then it makes an http request and receives a response from the server.
+
+MY NOTES
+127.0.0.1 (local host - this computer you're on)
+
+starting a simple server 
+python3 -m http.server
